@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".HomeActivity"
+    android:clickable="false">
+
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Agricultural subsidies"
+        android:id="@+id/home_agr_sub_btn"
+
+        android:textSize="15dp"
+        android:background="#50BD78"
+        android:textColor="#ffffff"
+
+        android:layout_marginTop="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="onclickAgr"
+        />
+
+    <Button
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="#50BD78"
+        android:text="Safety Net"
+
+        android:textColor="#ffffff"
+        android:textSize="15dp"
+        android:id="@+id/home_safe_net_btn"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/home_agr_sub_btn"
+        android:onClick="onclickSafetyNet"
+        android:layout_alignStart="@+id/home_agr_sub_btn" />
+</RelativeLayout>

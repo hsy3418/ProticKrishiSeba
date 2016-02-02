@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">ProticKrishiSeba</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="home_agricultural_sub_btn">New Button</string>
+    <string name="home_safety_net_btn">New Button</string>
+    <string name="title_activity_subsidy_name_activity">Subsidy_name_activity</string>
+    <string name="subsidy_eligbile_check_btn">New Button</string>
+</resources>
