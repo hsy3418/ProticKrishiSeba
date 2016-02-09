@@ -6,44 +6,26 @@ import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
 
 
-public class HomeActivity extends ActionBarActivity {
-
-
-
-    public void onclickAgr(View view){
-        Intent i = new Intent(this,SubsidyActivity.class);
-        startActivity(i);
-    }
+public class subsidy_address_activity extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.activity_subsidy_address_activity);
         ActionBar actionBar = getSupportActionBar();
         //actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
         // actionBar.setBackgroundDrawable(new ColorDrawable(#647b97));
-        actionBar.setTitle("Home");
-//        Button agricultureBtn = (Button)findViewById(R.id.home_agr_sub_btn);
-//        agricultureBtn.setOnClickListener(
-//                new Button.OnClickListener(){
-//                    @Override
-//                    public void onClick(View view) {
-//                        i = new Intent(this, SubsidyActivity.class);
-//                    }
-//                }
-//        );
+        actionBar.setTitle("Address");
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_home, menu);
+        getMenuInflater().inflate(R.menu.menu_subsidy_address_activity, menu);
         return true;
     }
 

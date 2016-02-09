@@ -20,6 +20,18 @@
             android:name=".SubsidyActivity"
             android:label="@string/title_activity_subsidy_name_activity" >
         </activity>
+        <activity
+            android:name=".subsidy_address_activity"
+            android:label="@string/title_activity_subsidy_address_activity" >
+        </activity>
+        <activity
+            android:name=".SubsidyDetailActivity"
+            android:label="@string/title_activity_subsidy_detail_activity" >
+        </activity>
+        <activity
+            android:name=".SubsidyCheckEligibilityActivity"
+            android:label="@string/title_activity_subsidy_check_eligibility" >
+        </activity>
     </application>
 
 </manifest>

@@ -1,0 +1,112 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.oxfam.protickrishiseba.SubsidyCheckEligibilityActivity"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="5dp"
+        android:id="@+id/linearLayout"
+        android:layout_weight="0.19">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:textColor="#666666"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Check You Eligibility"
+            android:layout_gravity="center"
+
+   />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:layout_marginBottom="2dp"
+            android:textColor="#666666"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Are you "
+            android:layout_gravity="center"
+
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:textSize="15dp"
+            android:textColor="#666666"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Large Text"
+            android:id="@+id/eligibility_criteria"
+    />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/group">
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Yes"
+                android:textColor="#666666"
+                android:id="@+id/yesradio" />
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No"
+                android:textColor="#666666"
+                android:id="@+id/noradio" />
+            </RadioGroup>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginBottom="5dp"
+
+            android:textColor="#ffffff"
+            android:background="#50BD78"
+            android:id="@+id/yesbtn" />
+
+
+        <!--<Button-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="No"-->
+            <!--android:id="@+id/nobtn" />-->
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check Criteria"
+        android:onClick="checkCriteria"
+        android:textColor="#ffffff"
+        android:background="#50BD78"
+        android:id="@+id/checkCriteria" />
+    </LinearLayout>
+
+
+</LinearLayout>

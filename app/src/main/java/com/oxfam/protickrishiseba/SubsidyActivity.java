@@ -1,5 +1,8 @@
 package com.oxfam.protickrishiseba;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -31,21 +34,22 @@ public class SubsidyActivity extends ActionBarActivity {
         actionBar.setDisplayShowTitleEnabled(true);// 这里的Title显示的是Activity的android:label属性指定的文字，也就是图1中”Google Play”
 
 
-        ActionBar.Tab tab = actionBar.newTab().setText("Name").setTabListener(new CustomTabListener<subsidyNameFragment>(
+        ActionBar.Tab tab = actionBar.newTab().setText("Agricultural Schemes ").setTabListener(new CustomTabListener<subsidyNameFragment>(
                 this,"Name",subsidyNameFragment.class));
         actionBar.addTab(tab);
-        tab = actionBar.newTab().setText("Eligibility").setTabListener(new CustomTabListener<SubsidyEligibilityFragment>(
+        tab = actionBar.newTab().setText("Check Eligibility").setTabListener(new CustomTabListener<SubsidyEligibilityFragment>(
                 this,"Eligibility",SubsidyEligibilityFragment.class));
         actionBar.addTab(tab);
-        tab = actionBar.newTab().setText("Service").setTabListener(new CustomTabListener<SubsidyServiceFragment>(
+        tab = actionBar.newTab().setText("Service Covered").setTabListener(new CustomTabListener<SubsidyServiceFragment>(
                 this,"Service",SubsidyServiceFragment.class));
         actionBar.addTab(tab);
-        tab = actionBar.newTab().setText("Process").setTabListener(new CustomTabListener<SubsidyProcessFragment>(
+        tab = actionBar.newTab().setText("Enrolling Process").setTabListener(new CustomTabListener<SubsidyProcessFragment>(
                 this,"Process",SubsidyProcessFragment.class));
         actionBar.addTab(tab);
-        
 
 
+
+        actionBar.setStackedBackgroundDrawable(new ColorDrawable(Color.parseColor("#67e194")));
 
 
 //        ActionBar.Tab tab = actionBar.newTab().setText("Name").setTabListener(this);
@@ -81,8 +85,9 @@ public class SubsidyActivity extends ActionBarActivity {
         int id = item.getItemId();
 
         //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
+        if (id == R.id.action_home) {
+            Intent i = new Intent(this,HomeActivity.class);
+            startActivity(i);
         }
 
         return super.onOptionsItemSelected(item);

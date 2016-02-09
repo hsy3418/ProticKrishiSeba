@@ -4,12 +4,4 @@
     android:layout_height="match_parent">
 
 
-    <TextView
-        android:layout_width="192dp"
-        android:layout_height="wrap_content"
-        android:text="Service"
-        android:id="@+id/textView"
-        android:layout_gravity="center_horizontal"
-        android:layout_weight="0.16" />
-
 </LinearLayout>
